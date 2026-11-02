@@ -127,7 +127,7 @@ class CarbonCommonMixin(models.AbstractModel):
 
         We will check if the field exists on the model, and if it doesn't, we will not add the button to the list.
         """
-        CARBON_FOOTPRINT_STRING = _("Carbon Footprint")
+        CARBON_FOOTPRINT_STRING = cls.env._("Carbon Footprint")
         button_list = [
             # Carbon origin button
             dict(
